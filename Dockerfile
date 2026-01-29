@@ -66,4 +66,5 @@ COPY src ./src
 ENV CLAWDBOT_PUBLIC_PORT=8080
 ENV PORT=8080
 EXPOSE 8080
-CMD ["node", "src/server.js"]
+CMD ["sh", "-c", "clawdbot gateway & node src/server.js"]
+
